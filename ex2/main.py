@@ -1,7 +1,7 @@
 from cities import *
 from classe_city import *
 
-for i in cities:
-    i=City(i)
-    City.show_information(i)
-    i.show_information() #second method
+for dico in cities:
+    ville=City(dico)
+    #City.show_information(ville)
+    ville.show_information() #second method

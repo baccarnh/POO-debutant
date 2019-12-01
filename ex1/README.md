@@ -1,4 +1,4 @@
-Exercice 1 :
+# Exercice 1 :
 Écrivez une classe city représentant une ville. Elle doit avoir les attributs suivants :
 -nom : le nom de la ville en question (par exemple Paris)
 -département : le département de la ville sous forme d’un integer

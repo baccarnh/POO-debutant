@@ -3,26 +3,28 @@ class City:
     - son nom
     - son numero de departement"""
 
-    def __init__(self,cities):
+    def __init__(self,dico):
         """Constructeur de notre classe"""
         self.name = None
-        self.departement = None
+        self.department = None
         self.country= None
         self.population= None
         self.mayor=None
         self.capital=None
+        self.hydratation(dico)
 
-        for key_name, value_name in cities.items():
+    def hydratation(self, dico):
+        for key_name, value_name in dico.items():
             if hasattr(self, key_name):
                 setattr(self, key_name, value_name)
 
     def show_information(self):
-        text ="------------------\n \
+        text="------------------\n \
         name: {}\n \
-        departement: {}\n \
+        department: {}\n \
         country: {}\n \
         population: {}\n \
         mayor: {}\n \
         capital: {}\n"
 
-        print(text.format(self.name, self.departement, self.country, self.population, self.mayor, self.capital))
+        print(text.format(self.name, self.department, self.country, self.population, self.mayor, self.capital))
